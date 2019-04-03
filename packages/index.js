@@ -1,6 +1,11 @@
 import LgcButton from "./button";
 import LgcButton2 from "./button2";
 
+// 检测到 Vue 才执行
+// if (typeof window !== 'undefined' && window.Vue) {
+//   install(Vue)
+// }
+
 const components = [
   LgcButton,
   LgcButton2
@@ -19,11 +24,6 @@ LgcDesign.install = (Vue) => {
   // 遍历注册所有组件
   components.forEach(component => Vue.component(component.name, component))
 }
-
-// 检测到 Vue 才执行
-// if (typeof window !== 'undefined' && window.Vue) {
-//   install(Vue)
-// }
 
 // 全量引入 import LgcDesign from 'lgc-design'  ->  Vue.use(LgcDesign)
 export default LgcDesign;
