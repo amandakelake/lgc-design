@@ -9,15 +9,11 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import LgcButton from "../packages/button"
-import LgcButton2 from "../packages/button2"
 
 export default {
   name: 'app',
   components: {
     HelloWorld,
-    LgcButton,
-    LgcButton2
   }
 }
 </script>

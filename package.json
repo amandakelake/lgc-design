@@ -1,7 +1,7 @@
 {
   "name": "lgc-design",
   "version": "0.0.1",
-  "description": "基于 vue-cli3 的 UI 组件库",
+  "description": "UI library based on vue-cli3",
   "private": false,
   "main": "lib/lgc-design.umd.min.js",
   "author": "amandakelake <lguangcong@163.com>",
