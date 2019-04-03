@@ -1,5 +1,8 @@
 const path = require('path')
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ?
+    '/lgc-design-docs/' :
+    '/',
   // 修改 pages 入口
   pages: {
     index: {
