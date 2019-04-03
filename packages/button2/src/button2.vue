@@ -23,6 +23,7 @@ export default {
 
 <style scoped>
 .component-button {
+  margin: 10px 20px;
   width: 300px;
   height: 100px;
   text-align: center;

@@ -1,14 +1,13 @@
 <template>
-  <div class="component-button" :style="{ color: color, backgroundColor: bgColor }">{{ title }}</div>
+  <div class="component-button" :style="{ color: color, backgroundColor: bgColor }">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
 export default {
   name: "LgcButton",
   props: {
-    title: {
-      type: String
-    },
     color: {
       type: String,
       default: "white"
@@ -26,8 +25,10 @@ export default {
   width: 300px;
   height: 100px;
   text-align: center;
+  margin: 10px 20px;
   font-size: 36px;
   line-height: 100px;
   border-radius: 20px;
+  cursor: pointer;
 }
 </style>
