@@ -5,18 +5,23 @@ import Home from "../pages/home/home.vue";
 Vue.use(Router);
 
 const router = new Router({
-	mode: "history",
-	routes: [
-		{
-			path: "/",
-			name: "home",
-			component: Home,
-		},
-	]
+  mode: "hash",
+  routes: [
+    {
+      path: "/",
+      name: "home",
+      component: Home
+    },
+    {
+      path: "/button",
+      name: "button",
+      component: resolve => require(["../pages/button/index.vue"], resolve)
+    }
+  ]
 });
 
 router.beforeEach((to, from, next) => {
-  console.log('router.beforeEach');
+  // do something
   next();
 });
 

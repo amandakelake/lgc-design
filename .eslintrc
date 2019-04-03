@@ -9,7 +9,15 @@
     "eslint:recommended",
     "@vue/prettier"
   ],
-  "rules": {},
+  "rules": {
+    "no-console": "warn",
+    "no-debugger": "warn",
+		"missing-whitespace-between-attributes": "off",
+		"quotes": [1, "double"],
+		"no-func-assign": 2,
+		"no-const-assign": 2,
+		"no-var": 2
+  },
   "parserOptions": {
     "parser": "babel-eslint",
     "ecmaVersion": 2018

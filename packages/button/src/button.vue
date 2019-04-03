@@ -1,5 +1,9 @@
 <template>
-  <div class="component-button" :style="{ color: color, backgroundColor: bgColor }">
+  <div
+    class="component-button"
+    :style="{ color: color, backgroundColor: bgColor }"
+    @click="clickHandle"
+  >
     <slot></slot>
   </div>
 </template>
@@ -16,8 +20,13 @@ export default {
       type: String,
       default: "yellow"
     }
+  },
+  methods: {
+    clickHandle() {
+      this.$emit("click");
+    }
   }
-}
+};
 </script>
 
 <style scoped>
