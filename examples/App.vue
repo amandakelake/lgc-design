@@ -8,13 +8,9 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "app",
-  components: {
-    HelloWorld
-  }
+  components: {}
 };
 </script>
 
@@ -23,7 +19,8 @@ export default {
   margin: 0;
   padding: 0;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 #app {
