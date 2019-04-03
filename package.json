@@ -6,7 +6,9 @@
   "main": "lib/lgc-design.umd.min.js",
   "author": "amandakelake <lguangcong@163.com>",
   "license": "MIT",
-  "keywords": ["lgc-design"],
+  "keywords": [
+    "lgc-design"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
