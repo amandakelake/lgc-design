@@ -28,11 +28,6 @@ module.exports = {
       .end()
       .use("babel")
       .loader("babel-loader")
-      .rule("eslint")
-      .use("eslint-loader")
-      .options({
-        fix: true
-      })
       .tap(options => {
         // 修改它的选项...
         return options;
