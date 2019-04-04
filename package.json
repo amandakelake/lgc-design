@@ -6,8 +6,11 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name lgc-design --dest lib packages/index.js",
     "deploy": "sh ./deploy.sh",
-    "lib": "vue-cli-service build --target lib --name lgc-design --dest lib packages/index.js"
+    "deploy:vp": "sh ./deploy-vuepress.sh",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -28,7 +31,9 @@
     "vue-lazyload": "^1.2.6",
     "vue-router": "^3.0.2",
     "vue-template-compiler": "^2.5.21",
-    "vuex": "^3.1.0"
+    "vuepress": "^0.14.10",
+    "vuex": "^3.1.0",
+    "webpack-dev-middleware": "^3.6.0"
   },
   "postcss": {
     "plugins": {
@@ -45,6 +50,11 @@
   "main": "lib/lgc-design.umd.min.js",
   "description": "UI library based on vue-cli3",
   "keywords": [
-    "lgc-design"
+    "lgc-design",
+    "lgc",
+    "Lgc",
+    "LGC",
+    "amandakelake",
+    "Amandakelake"
   ]
 }

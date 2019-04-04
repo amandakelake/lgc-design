@@ -1,5 +1,10 @@
 <template>
-  <div class="component-button" :style="{ color: color, backgroundColor: bgColor }">{{ title }}</div>
+  <div
+    class="component-button"
+    :style="{ color: color, backgroundColor: bgColor }"
+  >
+    {{ title }}
+  </div>
 </template>
 
 <script>
@@ -18,7 +23,7 @@ export default {
       default: "yellow"
     }
   }
-}
+};
 </script>
 
 <style scoped>
