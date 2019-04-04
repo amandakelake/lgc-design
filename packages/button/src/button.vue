@@ -14,7 +14,7 @@ export default {
   props: {
     color: {
       type: String,
-      default: "white"
+      default: "#333"
     },
     bgColor: {
       type: String,
@@ -22,8 +22,8 @@ export default {
     }
   },
   methods: {
-    clickHandle() {
-      this.$emit("click");
+    clickHandle(e) {
+      this.$emit("click", e);
     }
   }
 };
@@ -31,13 +31,14 @@ export default {
 
 <style scoped>
 .component-button {
-  width: 300px;
-  height: 100px;
+  /* width: 300px; */
+  /* height: 100px; */
   text-align: center;
-  margin: 10px 20px;
-  font-size: 36px;
-  line-height: 100px;
-  border-radius: 20px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  /* font-size: 36px; */
+  /* line-height: 100px; */
+  border-radius: 50px;
   cursor: pointer;
 }
 </style>
