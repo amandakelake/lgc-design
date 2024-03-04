@@ -18,7 +18,7 @@ export default {
     },
     bgColor: {
       type: String,
-      default: "yellow"
+      default: "#C1C1C1"
     }
   },
   methods: {
